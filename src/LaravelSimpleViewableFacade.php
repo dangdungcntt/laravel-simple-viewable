@@ -16,6 +16,6 @@ class LaravelSimpleViewableFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'laravel-simple-viewable';
+        return 'simple-viewable';
     }
 }
