@@ -15,7 +15,7 @@ trait Viewable
         static::addGlobalScope(function (Builder $builder) {
             $table = static::getTableName();
             $viewsTable = config('simple-viewable.models.view.table_name');
-            return $builder->join(
+            return $builder->leftJoin(
                 $viewsTable,
                 function (JoinClause $joinClause) use ($viewsTable, $table) {
                     $joinClause
